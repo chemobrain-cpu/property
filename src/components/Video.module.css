@@ -1,0 +1,52 @@
+/* property card tail section */
+.videosection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 40px;
+
+}
+.videosection h1 {
+    font-size: 1.4rem;
+    color: var(--color-headertext-color);
+    margin-bottom: 100px;
+    align-self: flex-start;
+    font-weight: 300;
+}
+.videocontainer {
+    width: 80%;
+    height: 300px;
+    background-color: var(--color-black);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+
+}
+.videocontainer span{
+    color:var(--color-white);
+    border: 2px solid var(--color-white);
+    border-radius: 100%;
+    padding:15px;
+    cursor: pointer;
+    font-size: 5rem;
+}
+
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 800px) {
+    .videosection {
+        padding-right: 1.5%;
+        padding-left: 1.5%;
+    
+    }
+    .videocontainer {
+        width:100%;
+    
+    
+    }
+}

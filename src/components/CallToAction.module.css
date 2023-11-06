@@ -1,0 +1,70 @@
+.calltotaction{
+    background-color: var( --color-red);
+    display:flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.calltotaction h1{
+    color:var(--color-white);
+    font-size: 1.5rem;
+    width:40%;
+    text-align: left;
+}
+
+
+.calltotaction .button{
+    width:200px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border: 1px solid var(--color-white);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-family: Poppins;
+    color: var(--color-white);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.calltotaction .button:hover{
+    background-color: var( --color-white);
+    color:var(--color-red);
+    transition: 1.5s ease  ;
+    
+}
+
+@media screen and (max-width: 1200px) {
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .calltotaction{
+       flex-direction: column;
+       align-items: center;
+    }
+
+
+    
+    .calltotaction h1{
+        width:80%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    
+    .calltotaction .button{
+        width:200px; 
+    }
+    
+
+
+    
+}

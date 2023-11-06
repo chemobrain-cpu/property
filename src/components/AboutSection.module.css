@@ -1,0 +1,74 @@
+/* property card tail section */
+
+.aboutSection {
+    background-color: var(--color-fade);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-bottom: 60px;
+}
+
+.aboutSection h1 {
+    font-size: 1.4rem;
+    color: var(--color-headertext-color);
+    margin-bottom: 20px;
+}
+
+.aboutSection p {
+    font-size: 1.1rem;
+    color: var(--color-headertext-color);
+    margin-bottom: 25px;
+    font-weight: lighter;
+}
+
+.numberoutercontainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.numbercontainer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.number {
+    text-align: center;
+}
+
+.number h1 {
+    font-size: 4.5rem;
+
+}
+
+.number p {
+    font-size: 1.3rem;
+    font-weight: bolder;
+
+}
+
+
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 800px) {
+
+    /*about section*/
+    .aboutSection {
+        padding-right: 1.5%;
+        padding-left: 1.5%;
+
+    }
+
+    .numbercontainer {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

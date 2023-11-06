@@ -1,0 +1,62 @@
+ .downloadbutton{
+    width:100%;
+    background-color: black;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+
+
+  .downloadbutton span{
+    color: var(--color-white);
+    font-size:3rem;
+}
+
+.downloadbuttontext{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-white);
+    width:90%
+}
+
+.downloadbuttontext h1{
+    color:var(--color-white);
+    margin-bottom: 0px;
+}
+
+.downloadbuttontext p{
+    margin-bottom: 0px;
+    color:var(--color-white);
+}
+
+
+
+@media screen and (max-width:800px){
+  
+    .downloadbuttontext h1{
+        font-size: 1rem;
+    }
+    
+    .downloadbuttontext p{
+        font-size: .8rem;
+
+    }
+}
+
+
+
+
+
+
+
+
+

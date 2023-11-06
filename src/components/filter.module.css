@@ -1,0 +1,159 @@
+/*styling the search section*/
+.searchsection{
+    padding-top: 65px;
+    background-image: url(../../public/home.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.searchsection h1{
+    padding-top: 60px;
+    text-align: center;
+    
+    color:var(--color-white);
+    font-size: 2.5rem;
+}
+.searchsection .filtersection{
+    padding-top: 30px;
+    width:60%;
+    margin-bottom: 15px;
+    width:70%
+}
+
+
+.searchsection .filtersection .buttonselectors{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+
+}
+.button{
+    width:34%;
+    height:50px;
+    background-color: rgba(0,0,0,0.2);
+    color:var(--color-white);
+    border: .5px solid var(--color-white);
+    font-size: 1.3rem;
+    
+}
+
+.hoverbutton{
+    background-color: var(--color-red);
+    background-color: rgba(228, 56, 56,.8);
+}
+
+.searchsection .filtersection .oneinput{
+    height:50px;
+    width:100%;
+    padding: 10px;
+    font-size: 1rem;
+    
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.searchsection .filtersection .inputgrid{
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    column-gap:4%;
+    row-gap: 15px;
+    width:100%;
+}
+
+.searchsection .filtersection .gridinputcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hide{
+    display:none
+}
+
+
+.searchsection .filtersection .inputgrid .gridinputcontainer label{
+    font-size:1.3rem;
+    color:var(--color-white);
+    
+}
+
+
+.searchsection .filtersection .inputgrid .gridinputcontainer .gridinput{
+    height:30px;
+    padding:5px;
+    border-radius: 2px;
+    width: 100%;
+
+}
+
+.moresearch{
+    color:var(--color-white);
+    font-size: 1.4rem;
+    cursor: pointer;
+    text-align: left;
+    width:70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+   
+}
+
+.searchbutton{
+    width:200px;
+    height:50px;
+    background-color: var(--color-red);
+    width:70%;
+
+}
+
+.searchbutton{
+    width:200px;
+    height:45px;
+    background-color: var(--color-red);
+    width:200px;
+    border-radius: 3px;
+    color:var(--color-white);
+    
+    font-size: 1rem;
+    align-self: flex-end;
+    margin-right: 15%;
+}
+
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 800px) {
+    .searchsection h1{
+        display:none
+    }
+
+    .searchsection .filtersection{
+        padding-top: 60px;
+        width:97%
+        
+    }
+    .searchsection .moresearch{
+        width:97%;
+        justify-content: center;
+        
+    }
+    .searchsection .searchbutton{
+        width:97%;
+        margin-right:1.5%;
+    }
+
+    .searchsection .filtersection .inputgrid{
+        grid-template-columns: 48% 48%;
+        column-gap:4%;
+    }
+}

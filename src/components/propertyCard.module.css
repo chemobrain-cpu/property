@@ -1,0 +1,174 @@
+
+.propertycard {
+    border: 1px solid var(--color-fade);
+    margin-bottom: 50px;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+/* property card header section */
+.cardhead{
+    padding: 10px
+}
+
+.cardhead .cardheaderText {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: var(--color-headertext-color);
+}
+/* property card center section */
+.cardcenter {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.cardcenter .photo {
+    width: 55%;
+    background-size: cover;
+    margin-right: 5px;
+    height: 70%;
+}
+.cardcenter img {
+    width: 100%;
+
+
+}
+
+.cardcenter .descriptioncontainer {
+    width: 40%;
+    
+
+}
+
+.cardcenter .descriptioncontainer h1{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--color-red);
+
+}
+
+.cardcenter .descriptioncontainer p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: var(--color-text-color);
+
+}
+
+.cardcenter .descriptionprice{
+    border-top: 1px solid var(--color-fade);
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+
+.cardcenter .descriptionprice h2{
+    color: var(--color-red);
+    margin-right: 9px;
+}
+
+.cardcenter .descriptionprice h4{
+    color: var(--color-fadetext);
+    font-weight: 300;
+}
+
+.cardtail{
+    background-color: var(--color-fade);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgb(220,220,220);
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+}
+
+.cardtail .tailcontent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardtail .tailcontent span{
+    color: var(--color-fadetext);
+}
+
+
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 800px) {
+    
+    /* property card header section */
+    .propertycard .cardhead .cardheaderText {
+
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: var(--color-headertext-color)
+    }
+
+    /* property card center section */
+    .cardcenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .cardcenter .photo {
+        width: 70%;
+        margin-right: 0px;
+        height: 70%;
+        margin-bottom: 10px;
+
+    }
+
+    .cardcenter .descriptioncontainer {
+        width: 100%;
+
+        height: 30%;
+
+    }
+
+    .cardcenter .descriptionprice{
+        height:50px;
+        border-top: 1px solid var(--color-fade);
+        padding-top:0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    
+    }
+
+    /* property card tail section */
+    .cardtail{
+        background-color: var(--color-fade);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+
+    .cardtail .tailcontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    
+    }
+    .cardtail .tailcontent span{
+        font-size: .8rem;
+    }
+    
+
+   
+
+
+}

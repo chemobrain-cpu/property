@@ -1,0 +1,61 @@
+/*poppins font import stays here*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* declaring and using root variables in css*/
+:root {
+    --box-hover-shadow: 10px 8px 5px rgb(228, 228, 228);
+    --color-red:  rgb(207, 64, 64);  
+    --color-footertext-color:rgb(200, 200, 200);
+    --color-white: #fff;
+    --color-button:rgb(228, 56, 56);
+    --color-headertext-color:rgb(65, 65, 65);
+    --color-fadetext:rgb(112, 112, 112);
+    --color-text-color:rgb(85, 85, 85);
+    --color-fade:rgb(245, 245, 245);
+    --color-black:rgb(0, 0, 0);
+    --color-faint-line:rgb(221, 220, 220);
+}
+
+
+::placeholder {
+    font-size: 1rem;
+    padding-left: 5px;
+    text-align: left;
+    width:100%;
+    color:rgb(123, 123, 123);
+    font-weight: lighter;
+    font-family: Poppins;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-box-shadow:0 0 0 30px white inset !important
+}
+
+
+
+/*general styling for all element */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6,p,input,button,span,label{
+  font-family: Poppins;
+}
