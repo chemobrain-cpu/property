@@ -1,13 +1,20 @@
 import React,{useState} from 'react';
-import styles from './navigation.module.css'
+import styles from './navigation.module.css';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const Navigation = () => {
 
     let [isExpandMobile, setIsExpandMobile] = useState(false)
+    let navigate = useNavigate()
 
     let showMobileMenu = () => {
         setIsExpandMobile(prev => !prev)
+    } 
+
+    let navigateHandler = (e)=>{
+        navigate(`/${e}`)
     }
 
     return (
@@ -36,32 +43,32 @@ const Navigation = () => {
 
                     <ul className={styles.navigationList}>
                         <li>
-                            <a>FOR SALE</a>
+                            <a onClick={()=> navigateHandler('login')}>FOR SALE</a>
 
                         </li>
 
                         <li>
-                            <a>FOR RENT</a>
+                            <a onClick={()=> navigateHandler('login')}>FOR RENT</a>
 
                         </li>
                         <li>
-                            <a>COMPANIES</a>
+                            <a onClick={()=> navigateHandler('login')}>COMPANIES</a>
 
 
                         </li>
                         <li>
-                            <a>REQUESTS</a>
+                            <a onClick={()=> navigateHandler('login')}>REQUESTS</a>
 
                         </li>
                         <li>
 
-                            <a>TRENDS</a>
+                            <a onClick={()=> navigateHandler('login')}>TRENDS</a>
                         </li>
                         <li>
-                            <a>REGISTER</a>
+                            <a onClick={()=> navigateHandler('login')}>REGISTER</a>
                         </li>
                         <li>
-                            <a>SIGN IN</a>
+                            <a onClick={()=> navigateHandler('login')}>SIGN IN</a>
                         </li>
                     </ul>
 
@@ -72,32 +79,32 @@ const Navigation = () => {
             </div>
             <ul className={`${isExpandMobile ? styles.showmenu : styles.mobileNavigationList} `}>
                 <li>
-                    <a>FOR SALE</a>
+                    <a onClick={()=> navigateHandler('login')}>FOR SALE</a>
 
                 </li>
 
                 <li>
-                    <a>FOR RENT</a>
+                    <a onClick={()=> navigateHandler('login')}>FOR RENT</a>
 
                 </li>
                 <li>
-                    <a>COMPANIES</a>
+                    <a onClick={()=> navigateHandler('login')}>COMPANIES</a>
 
 
                 </li>
                 <li>
-                    <a>REQUESTS</a>
+                    <a onClick={()=> navigateHandler('login')}>REQUESTS</a>
 
                 </li>
                 <li>
 
-                    <a>TRENDS</a>
+                    <a onClick={()=> navigateHandler('login')}>TRENDS</a>
                 </li>
                 <li>
-                    <a>REGISTER</a>
+                    <a onClick={()=> navigateHandler('signup')}>REGISTER</a>
                 </li>
                 <li>
-                    <a>SIGN IN</a>
+                    <a onClick={()=> navigateHandler('login')}>SIGN IN</a>
                 </li>
 
 

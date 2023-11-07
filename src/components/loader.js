@@ -4,9 +4,10 @@ import Spinner from "react-activity/dist/Spinner"
 import "react-activity/dist/Spinner.css";
 import { useSelector } from "react-redux";
 
+
+
 let Loader = () => {
     let { user,color } = useSelector(state => state.userAuth)
-
     return <div className={styles.modal_screen}>
         <div className={styles.modal_center}>
             <div className={styles.modal_input_card}>

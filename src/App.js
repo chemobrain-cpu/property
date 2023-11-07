@@ -15,6 +15,9 @@ import { useSelector } from "react-redux";
 
 const Home = React.lazy(() => import('./screens/Home/Home'))
 
+const Login = React.lazy(() => import('./screens/Auth/Login'))
+const Signup = React.lazy(() => import('./screens/Auth/Signup'))
+
 
 
 function App() {
@@ -22,11 +25,12 @@ function App() {
     <div className = "App">
       <Suspense fallback={<FallBackComponent />} >
         <Routes>
-          {/* Admin Routes*/}
+          {/* General*/}
           <Route path='/' element={<Home />} />
         
-          {/*general screens*/}
-          <Route path='/' element={<Home />} />
+          {/*auth screens*/}
+          <Route path='/login' element={<Login/>} />
+          <Route path='/signup' element={<Signup/>} />
        
 
         </Routes>
