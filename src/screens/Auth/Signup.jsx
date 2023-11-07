@@ -79,7 +79,6 @@ function SignupPage() {
 
         }else if (e.formName === "confirmPassword") {
             let formValue = e.value
-            alert(formValue)
             setConfirmPassword(formValue)
             setConfirmPasswordError(e.error)
         }
