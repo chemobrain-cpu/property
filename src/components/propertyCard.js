@@ -17,9 +17,13 @@ const PropertyCard = ({data}) => {
                 <div className={styles.descriptiontext}>
                     <h1 className={styles.descriptiontexthead}>{data.property_title}</h1>
 
+                    <h2><span className="material-icons">fmd_good</span>Lekki phase 2</h2>
+
                     <p className={styles.descriptiontextparagraph}>
                         {data.prperty_description}
                     </p>
+
+                    <a>more details</a>
 
 
                 </div>
@@ -33,36 +37,33 @@ const PropertyCard = ({data}) => {
 
 
         </div>
+
+
         <div className={styles.cardtail}>
             <div className={styles.tailcontent}>
-                <span className="material-icons" style={{ fontSize: '1.2rem' }}>
-                    bed
+            <span className="material-icons" style={{ fontSize: '2rem',padding:'10px',borderRadius:'100%' }}>
+                    phone
 
                 </span>
-                <span >
-                   {data.number_of_bedrooms}
+                
 
+            </div>
+            <div className={styles.tailcontent}>
+                <span className="material-icons" style={{ fontSize: '2rem' }}>
+                    favorite
+
+                </span>
+                <span>
+                    save
                 </span>
 
             </div>
             <div className={styles.tailcontent}>
-                <span className="material-icons" style={{ fontSize: '1.2rem' }}>
-                    wash
+                <span className="material-icons" style={{ fontSize: '2rem',color:'' }}>
+                    message
 
                 </span>
                 <span>
-                    {data.number_of_bathrooms}
-
-                </span>
-
-            </div>
-            <div className={styles.tailcontent}>
-                <span className="material-icons" style={{ fontSize: '1.2rem' }}>
-                    closet
-
-                </span>
-                <span>
-                    {data.number_of_toilet}
                 </span>
 
             </div>

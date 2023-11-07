@@ -23,7 +23,7 @@
     justify-content: space-between;
     
     padding: 10px;
-    padding-top: 0px;
+    padding-top: 0px
 }
 
 .cardcenter .photo {
@@ -36,6 +36,20 @@
     width: 100%;
 
 
+}
+
+.descriptiontext h2{
+    display:flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--color-fadetext);
+    
+}
+
+.descriptiontext a{
+    color:var(--color-red);
+    text-decoration: underline;
 }
 
 .cardcenter .descriptioncontainer {
@@ -76,13 +90,13 @@
 .cardcenter .descriptionprice h4{
     color: var(--color-fadetext);
     font-weight: 300;
+    
 }
 
 .cardtail{
     background-color: var(--color-fade);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border: 1px solid rgb(220,220,220);
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: grid;
     grid-template-columns: 32% 32% 32%;
     column-gap: 2%;
@@ -97,6 +111,8 @@
 
 .cardtail .tailcontent span{
     color: var(--color-fadetext);
+    font-size: 1rem;
+    margin-right: 5px;
 }
 
 
@@ -148,24 +164,22 @@
     }
 
     /* property card tail section */
-    .cardtail{
-        background-color: var(--color-fade);
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+   
+
+    
+
+
     
 
     .cardtail .tailcontent{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         
     
     }
-    .cardtail .tailcontent span{
-        font-size: .8rem;
-    }
+    
     
 
    

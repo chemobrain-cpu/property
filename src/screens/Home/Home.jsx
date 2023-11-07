@@ -13,16 +13,13 @@ import DownloadSection from "../../components/DownloadSection";
 import CallToAction from "../../components/CallToAction";
 import Footer from "../../components/Footer";
 
-
-
-
 let propertyData = [
 
     {
         property_name: 'Mini Flat',
         property_img_url: '../../house4.jpeg',
         property_title: 'Mini flat (room and parlour) for rent',
-        prperty_description: 'Mini flat available for rent at ogombo ajah. close to the road. rent is 750k agency 10% legal 10% caution 50k total package 900k',
+        prperty_description: 'Mini flat available for rent at ogombo ajah...',
         property_price: '₦1,600,000',
         duration: 'per annum',
         number_of_bedrooms: '5 bedrooms',
@@ -33,7 +30,7 @@ let propertyData = [
         property_name: 'Mini Flat',
         property_img_url: '../../house4.jpeg',
         property_title: 'Mini flat (room and parlour) for rent',
-        prperty_description: 'Mini flat available for rent at ogombo ajah. close to the road. rent is 750k agency 10% legal 10% caution 50k total package 900k',
+        prperty_description: 'Mini flat available for rent at ogombo ajah...',
         property_price: '₦1,600,000',
         duration: 'per annum',
         number_of_bedrooms: '5 bedrooms',
@@ -44,7 +41,7 @@ let propertyData = [
         property_name: 'Mini Flat',
         property_img_url: '../../house4.jpeg',
         property_title: 'Mini flat (room and parlour) for rent',
-        prperty_description: 'Mini flat available for rent at ogombo ajah. close to the road. rent is 750k agency 10% legal 10% caution 50k total package 900k',
+        prperty_description: 'Mini flat available for rent at ogombo ajah...',
         property_price: '₦1,600,000',
         duration: 'per annum',
         number_of_bedrooms: '5 bedrooms',
@@ -55,7 +52,7 @@ let propertyData = [
         property_name: 'Mini Flat',
         property_img_url: '../../house4.jpeg',
         property_title: 'Mini flat (room and parlour) for rent',
-        prperty_description: 'Mini flat available for rent at ogombo ajah. close to the road. rent is 750k agency 10% legal 10% caution 50k total package 900k',
+        prperty_description: 'Mini flat available for rent at ogombo ajah...',
         property_price: '₦1,600,000',
         duration: 'per annum',
         number_of_bedrooms: '5 bedrooms',
