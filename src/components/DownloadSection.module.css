@@ -1,21 +1,19 @@
 .downloadSection {
-    height: 400px;
+    height: 800px;
     border-top: .5px solid var(--color-faint-line);
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 300px;
     
-
 }
 
 .downloadSection h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: var(--color-headertext-color);
     font-weight: 300;
-    font-weight: bolder;
     margin-bottom: 20px;
+    width: 100%;
     text-align: center;
 }
 
@@ -29,11 +27,14 @@
     margin-bottom: 50px;
 }
 
+
 .appimagecontainer{
     width:40%;
     margin-bottom: 30px;
     background-size: cover;
-    display:flex
+    display:flex;
+    
+    overflow: hidden;
 }
 
 
@@ -49,7 +50,7 @@
 }
 
 .downloadbuttoncontainer .downloadbutton{
-    width:220px
+    width:220px;
     
 }
 
@@ -67,7 +68,7 @@
 
 @media screen and (max-width: 800px) {
     .downloadSection h1 {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
 
     .downloadSection p {
@@ -87,7 +88,7 @@
 
 
     .downloadSection {
-        margin-bottom: 380px;
+        
     }
 
 

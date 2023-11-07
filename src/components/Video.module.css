@@ -5,15 +5,16 @@
     align-items: center;
     padding-right: 5%;
     padding-left: 5%;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
 }
 .videosection h1 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     color: var(--color-headertext-color);
-    margin-bottom: 100px;
-    align-self: flex-start;
     font-weight: 300;
+    margin-bottom: 50px;
+    justify-self: flex-start;
+    width: 100%;
 }
 .videocontainer {
     width: 80%;

@@ -16,7 +16,7 @@
 }
 
 .aboutSection p {
-    font-size: 1rem;
+    font-size: .9rem;
     color: var(--color-headertext-color);
     margin-bottom: 25px;
     font-weight: lighter;
