@@ -78,33 +78,34 @@ const Navigation = () => {
 
             </div>
             <ul className={`${isExpandMobile ? styles.showmenu : styles.mobileNavigationList} `}>
-                <li>
-                    <a onClick={()=> navigateHandler('login')}>FOR SALE</a>
+                <li onClick={()=> navigateHandler('login')}>
+                    <a>FOR SALE</a>
 
                 </li>
 
-                <li>
-                    <a onClick={()=> navigateHandler('login')}>FOR RENT</a>
+                <li onClick={()=> navigateHandler('login')}>
+                    <a>FOR RENT</a>
 
                 </li>
-                <li>
-                    <a onClick={()=> navigateHandler('login')}>COMPANIES</a>
+
+                <li onClick={()=> navigateHandler('login')}>
+                    <a>COMPANIES</a>
 
 
                 </li>
-                <li>
-                    <a onClick={()=> navigateHandler('login')}>REQUESTS</a>
+                <li onClick={()=> navigateHandler('login')}>
+                    <a>REQUESTS</a>
 
                 </li>
-                <li>
+                <li onClick={()=> navigateHandler('login')}>
 
-                    <a onClick={()=> navigateHandler('login')}>TRENDS</a>
+                    <a>TRENDS</a>
                 </li>
-                <li>
-                    <a onClick={()=> navigateHandler('signup')}>REGISTER</a>
+                <li onClick={()=> navigateHandler('signup')}>
+                    <a>REGISTER</a>
                 </li>
-                <li>
-                    <a onClick={()=> navigateHandler('login')}>SIGN IN</a>
+                <li onClick={()=> navigateHandler('login')}>
+                    <a >SIGN IN</a>
                 </li>
 
 

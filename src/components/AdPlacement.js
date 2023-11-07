@@ -1,10 +1,19 @@
-import React from "react";
+import React,{useEffect} from "react";
 import styles from './AdPlacement.module.css';
+import AOS from "aos";
 
 
 
 const AdPlacement = () => {
-    return (<div className={styles.adPlacement}>
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1500
+        });
+    })
+
+
+    return (<div className={styles.adPlacement} data-aos="fade-up">
         <h1>Featured Real Estate Companies</h1>
 
 

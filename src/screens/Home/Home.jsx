@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from './home.module.css';
 import Navigation from "../../components/navigation";
 import SearchFilter from "../../components/filter";
@@ -11,8 +11,8 @@ import AdPlacement from "../../components/AdPlacement";
 import Video from "../../components/Video";
 import DownloadSection from "../../components/DownloadSection";
 import CallToAction from "../../components/CallToAction";
-import DownloadButton from "../../components/DownloadButton";
 import Footer from "../../components/Footer";
+
 
 
 
@@ -75,24 +75,36 @@ const Home = () => {
     }
 
 
+   
+
+
 
 
 
     return (<>
         {isLoading && <Loader />}
         <Navigation />
+
         <SearchFilter search={search} />
+
+
 
 
         <AdPlacement />
 
         <AdvanceSearchFilter />
+
+
+
         <PropertySection data={propertyData} />
+
         <About />
+
+
         <Video />
         <DownloadSection />
         <CallToAction />
-        <Footer/>
+        <Footer />
 
 
     </>)

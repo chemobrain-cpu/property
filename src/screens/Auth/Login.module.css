@@ -31,7 +31,7 @@
 .screenContainer h1 {
     font-size: 2.5rem;
     color: var(--color-white);
-    margin-bottom: 30px;
+    margin-top: 30px;
     z-index: 1000;
     position: absolute;
 }
@@ -54,12 +54,17 @@
 
 .screenContainer .rightContainer .rightformcontainer .navigate {
     display: none;
+}
 
 
+.navigate span{
+    cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .screenContainer .rightContainer .rightformcontainer h2 {
     font-size: 2rem;
+    margin-bottom: 10px;
 
 }
 

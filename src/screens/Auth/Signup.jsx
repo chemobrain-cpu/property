@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import FormInput from '../../components/Input';
 import SubmitBtn from '../../components/Submit';
 import Loader from "../../components/loader";
+import SelectInput from '../../components/select';
 
 
 
@@ -28,7 +29,10 @@ function SignupPage() {
     let [confirmPassword, setConfirmPassword] = useState("")
     let [confirmPasswordError, setConfirmPasswordError] = useState("")
     
+    
 
+    let [accountType, setAccountType] = useState("")
+    let [accountTypeError, setAccountTypeError] = useState("")
 
 
     let [isError, setIsError] = useState(false)
@@ -41,7 +45,7 @@ function SignupPage() {
     let navigate = useNavigate()
     //loaders state
 
-    let isFormValid =  password && !passwordError && !emailError && email && fullName && !fullNameError && confirmPassword && !confirmPasswordError && username && !usernameError
+    let isFormValid =  password && !passwordError && !emailError && email && fullName && !fullNameError && confirmPassword && !confirmPasswordError && username && !usernameError && accountType && !accountTypeError
 
 
 
@@ -67,13 +71,11 @@ function SignupPage() {
 
         } else if (e.formName === "fullName") {
             let formValue = e.value
-            alert(formValue)
             setFullName(formValue)
             setFullNameError(e.error)
 
         }else if (e.formName === "username") {
             let formValue = e.value
-            alert(formValue)
             setUsername(formValue)
             setUsernameError(e.error)
 
@@ -81,6 +83,10 @@ function SignupPage() {
             let formValue = e.value
             setConfirmPassword(formValue)
             setConfirmPasswordError(e.error)
+        }else if (e.formName === "accounttype") {
+            let formValue = e.value
+            setAccountType(formValue)
+            setAccountTypeError(e.error)
         }
     },[])
 
@@ -98,7 +104,8 @@ function SignupPage() {
             password: password,
             fullName :fullName,
             confirmPassword:confirmPassword,
-            username:username
+            username:username,
+            accountType:accountType
         }
 
         console.log(data)
@@ -217,6 +224,25 @@ function SignupPage() {
 
                         </div>
 
+
+                        <div className={styles.formCard}>
+                        <SelectInput
+                                icon='edit'
+                                label='Account type'
+                                option_1='Individual(searching for property)'
+                                option_2='Property owner'
+                                option_3='Estate agent'
+                                option_4='Property developer'
+                                className="formcard"
+                                setFormDetails={setFormDetails}
+                                formName="accounttype"
+                                placeholder='Select accont type'
+
+                            />
+
+
+                        </div>
+
                     </div>
 
 
@@ -229,6 +255,8 @@ function SignupPage() {
                         <SubmitBtn style={{ opacity: isFormValid ? 1 : 0.5, borderRadius: '8px' }} text="Continue" />
 
                         {isError && <p className={styles.errorText} >{isErrorInfo}</p>}
+
+                        
 
 
                     </div>
