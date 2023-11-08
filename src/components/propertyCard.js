@@ -60,7 +60,7 @@ const PropertyCard = ({data}) => {
             </div>
             <div className={styles.tailcontent}>
                 <span className="material-icons" style={{ fontSize: '2rem',color:'' }}>
-                    message
+                    chat
 
                 </span>
                 <span>
