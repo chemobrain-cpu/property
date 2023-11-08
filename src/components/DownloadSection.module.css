@@ -9,9 +9,9 @@
 }
 
 .downloadSection h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--color-headertext-color);
-    font-weight: 300;
+    font-weight: 600;
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
@@ -73,7 +73,7 @@
         
     }
     .downloadSection h1 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .downloadSection p {
