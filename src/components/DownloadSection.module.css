@@ -1,5 +1,5 @@
 .downloadSection {
-    height: 720px;
+    height: 730px;
     border-top: .5px solid var(--color-faint-line);
     padding-top: 40px;
     display: flex;
@@ -30,10 +30,9 @@
 
 .appimagecontainer{
     width:40%;
-    margin-bottom: 30px;
     background-size: cover;
     display:flex;
-    
+    margin-bottom: 40px;
     overflow: hidden;
 }
 
@@ -67,6 +66,12 @@
 }
 
 @media screen and (max-width: 800px) {
+
+    .downloadSection {
+        height:680px;
+        
+        
+    }
     .downloadSection h1 {
         font-size: 1.7rem;
     }
@@ -79,10 +84,12 @@
     
     .appimagecontainer{
         width:93%;
+        display: flex;
+        justify-content: center;
     }
     
     .appimagecontainer img{
-        width:100%;
+        width:70%;
     }
 
 

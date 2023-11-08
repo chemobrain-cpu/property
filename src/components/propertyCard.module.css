@@ -5,6 +5,7 @@
     border-radius: 3px;
     overflow: hidden;
     cursor: pointer;
+    box-shadow: var(--box-hover-shadow);
 
 }
 /* property card header section */
@@ -44,6 +45,7 @@
     font-size: 1.1rem;
     margin-bottom: 10px;
     color: var(--color-fadetext);
+    font-weight: 300;
     
 }
 
@@ -85,6 +87,7 @@
 .cardcenter .descriptionprice h2{
     color: var(--color-red);
     margin-right: 9px;
+    
 }
 
 .cardcenter .descriptionprice h4{
@@ -95,8 +98,6 @@
 
 .cardtail{
     background-color: var(--color-fade);
-    padding-top: 5px;
-    padding-bottom: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
